@@ -19,9 +19,8 @@ int RunGameEngine(int argc, char** argv)
     }
 
     std::string userDirectory = "";
-
-#if defined(__ANDROID__)
-    userDirectory = "/sdcard/claw/";
+#if defined(__VITA__)
+    userDirectory = "ux0:/claw/";
 #elif defined(__WINDOWS__)
     userDirectory = "";
 #else
